@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+		<head>
+			<title>DA BEST WEBSITE</title>
+		</head>
+		<body>
+			<form >
+	<!--		First Name:
+				<input type="text">
+	-->
+	<!--Some MAY FIND DIFFICULTY IN EXACTLY PLACING CURSOR ON TEXT BOX...SO WE CAN MAKE FIRST NAME label & USE for,id ATTRIBUTES  AS BELOW THEN EVEN WE CLICK ON FIRST NAME  THE CURSOR SHOWS UP ON TEXTFIELD
+		placeholder attr MAKES THE INITIAL TEXT WE GONNA PLACE AS GREY & FADED-->
+			<label for="first_name"> First Name:</label>
+			<input type="text" id="first_name" name="first_name" placeholder="Mylie">
+			<br><br>
+
+
+			<label for="last_name"> Last Name:</label>
+			<input type="text" id="last_name" name="last_name" placeholder="Cyrusgrande">
+			<br><br>
+
+			
+
+			<!--FEW OTHER DIFFERENT INPUT METHODS FOR FORMS-->
+
+
+			<!--1.CREATING RADIOBUTTONS FOR Title(Mr/Mrs etc)-->
+			<!--IF YOU DON'T ADD name ATTR THEN WE WILL BE ABLE TO SELECT ALL RADIOBTNS WHICH IS NOT CORRECT ,THE name(SAME) ATTR SHOULD BE ASSIGNED TO ALL RADIOBTNS SO THAT ALL BELONGS TO SAME GRP-->
+			<label for="title">Title:</label>
+
+			<label for="Mr.">Mr.</label>
+			<input type="radio" value="Mr." id="Mr." name="title">
+
+			<label for="Mrs.">Mrs.</label>
+			<input type="radio" value="Mrs." id="Mrs." name="title">
+
+
+			<label for="Miss.">Miss.</label>
+			<input type="radio" value="Miss." id="Miss." name="title">
+
+
+			<label for="PhD">PhD</label>
+			<input type="radio" value="PhD" id="PhD" name="title">
+			<br><br>
+
+
+			<!--2.Creating drop down list for payment-->
+
+			<label>Payment:</label>
+		<!--ALL DIFF TYPES OF ITEMS IN DROP DOWN MENU ARE WITHIN select tag-->
+			<select id="payment">
+				<option value="visa">visa</option>
+				<option value="mastercard">mastercard</option>
+				<option value="giftcard">giftcard</option>
+				<option value="check">check</option>
+			</select>
+			<br><br>
+
+			<!--3.Creating email field-->
+
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email"
+			placeholder="MCyrusgrande@gmail.com">
+			<br><br>
+
+			<!--4.Creating date input type-->
+			<!--WE CAN LIMIT THE DATE BY USING MIN i.e HERE WE CAN'T GO TO DATE BEFORE 2000..IF WE ENTERED STHG BEFORE IT SHOWS ERROR-->
+
+			<label for="birthday">Birthday:</label>
+			<input type="date" id="birthday" name="birthday" min="2000-01-01">
+			<br><br>
+
+
+			<!--5.Creating a number input type-->
+			<!--MOSTLY USED IN say (ONLINE SHOPPING IF YOU WANT TO SET THE QUANTITY (say NO:OF T-SHIRTS) -->
+			<!--INORDER TO LIMIT THE QUANTITY AS BYDEF THERE ARE BOTH +ve & -ve USE min , max..CAN ALSO SET DEF VALUE BY USING ATTR value-->
+
+			<label for="quantity">Quantity:</label>
+			<input type="number" id="quantity"  name="quantity" min="0" max="99" value="1">
+			<br><br>
+
+			<!--6.Telephone num-->
+			<label for="phone">Phone #:</label>
+			<input type="tel" id="phone" name="phone" >
+			<br><br>
+
+			<!--7.Password field-->
+			<!--CAN LIMIT THE AMOUNT OF CHARACTERS WE ADD BY USING maxlength ATTR...WE CAN'T ENTER TEXT ONCE WE RAN OUT OF LIMIT-->
+			<label for="password">Password:</label>
+			<input type="password"is="password" name="password" maxlength="12" >
+			max 12 characters
+			<br><br>
+
+			<!--8.Range input (works like a slider)-->
+			<!--SAY WE WANT TO RATE THEM BTW 1-5 THEN 1 BEFORE< , 5 AFTER>-->
+			<!--here step=25 COZ THERE ARE 100 NOTCHES(DIFF VALUES) SO 25/100=5....SO WE CAN RATE 1 , 2 , 3 , 4 ,5-->
+			<!--here value IS DEF VALUE WHEN WE OPEN WEB PAGE-->
+			<label for="slider">Rate us: </label>
+			1<input type="range" step="25" value="100">5
+			<br><br>
+
+			<!--9.checkbox input type EXAMPLE SUBSCRIBE BUTTON-->
+			<label for="subscribe">Subscribe</label>
+			<input type="checkbox" id="subscribe" name="subscribe">
+			<br><br>
+
+
+			<!--10.file input type-->
+			<!--TO UPLOAD A FILE TO SERVER PAGE-->
+			<!--TO LIMIT THE TYPE OF FILES TO UPLOADED USE accept ATTR-->
+			<label for="myfile">Upload a file:</label>
+			<input type="file" id="myfile"name="myfile" accept=".txt">
+			<br><br>
+
+
+			<input type="reset">
+			<br><br>
+			
+			<!--submits to wtever page assigned to action attr IF WE WRITE action="DO_SOMETHING.PHP" in form TAG IT TRYS TO SEND TO IT BUT AS FILE IS NOT THERE IT SHOWS your file couldn't be accessed -->
+			<input type="submit" >
+			</form>
+		</body>
+</html>
